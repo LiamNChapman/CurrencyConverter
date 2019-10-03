@@ -1,0 +1,23 @@
+{
+    "region" : "us-east-1",
+    "availablity_Zone": "us-east-1a",
+    "subnet_id": "subnet-f57f2c92",
+    "security_groups": ["sg-02433f243499ff78b"],
+    "ssh_username": "ubuntu",
+    "key_pair": "cosc349",
+    "ssh_private_key": "~/.ssh/cosc349.pem",
+    "ec2s:": {
+        "front_end": {
+            "instance_type": "t2.micro",
+            "tags": {
+                "Name": "front_end"
+            }
+        },
+        "back_end": {
+            "instance_type": "t2.micro",
+            "tags": {
+                "Name": "back_end"
+            }
+        }
+    }
+}
