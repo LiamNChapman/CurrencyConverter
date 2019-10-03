@@ -1,20 +1,25 @@
 {
     "region" : "us-east-1",
-    "availablity_Zone": "us-east-1a",
+    "availablity_zone": "us-east-1a",
     "subnet_id": "subnet-f57f2c92",
-    "security_groups": ["sg-02433f243499ff78b"],
+    "access_key_id": "ASIAVFCIPHTF26QJ4JVD",
+    "secret_access_key_id": "tqagqUaolh09frZSAop2mhQdhGYFG28tU5tL4Chq",
+    "session_token": "FQoGZXIvYXdzEDsaDPT9qNsUF83uX8nGDCKLAqbc7lZ60al5yYM8vl2yCNQDdZ/8ZgbnBXiRiy9Xs7t+HdIW6k2e5utONnhcdzU1OIzyd0OQDOiDBwi2cySY0IGMsBGwivMwF9Dx4i2RvYdeiHk75HxQ0RhvnUqX2QH8ITbrb4+Bgk30hC4MnH+Nf5HkN2jA+qNxMDtbLoePSxmhSa+Ag0JaUvvxbnShRdfh6j4u2+mUHEDw/foeiRMTNLAJzsWGpBvm0PDa8KsBuHTBHOK9piuDgt36s0399tzSqlIcXCEnmlJyXGWG9k6aQ4VfbjBB5BCXOJbFYOAkX3PDdqNb/kK22Ptvp1kYrC1KMNnQclsKEFfKGPHFeiGv3EQBfkkMg0Jf5+2AHSjkgdfsBQ==",
+    "security_groups": ["sg-02433f243499ff78b", "sg-075893909b7ce8dd5"],
     "ssh_username": "ubuntu",
     "key_pair": "cosc349",
     "ssh_private_key": "~/.ssh/cosc349.pem",
-    "ec2s:": {
+    "ec2s": {
         "front_end": {
             "instance_type": "t2.micro",
+            "ami_id": "ami-04763b3055de4860b",
             "tags": {
                 "Name": "front_end"
             }
         },
         "back_end": {
             "instance_type": "t2.micro",
+            "ami_id": "ami-04763b3055de4860b",
             "tags": {
                 "Name": "back_end"
             }
